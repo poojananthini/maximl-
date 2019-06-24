@@ -1,0 +1,20 @@
+a=list(input())
+m=-1
+b=[]
+for i in range(0,len(a)):
+    c=0
+    while(1):
+        if(a[i] not in b):
+            b.append(a[i])
+            c+=1
+            i+=1
+        else:
+            b=[]
+            break
+        if i<len(a):
+            pass
+        else:
+            break
+    if(m<c):
+        m=c
+print(m)
